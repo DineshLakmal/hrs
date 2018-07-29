@@ -59,10 +59,10 @@
                                             <label for="password-confirm">{{ __('Confirm Password') }}</label>
                                             <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                                         </div>
-                                        <div class="form-group">
+                                        <!-- <div class="form-group">
                                             <label for="avatar">Profile Image</label>
                                             <input id="avatar" type="file" class="form-control" name="avatar">
-                                        </div>
+                                        </div> -->
 
                                         <div align="right">
                                            <button type="submit" class="btn btn-default btn-register">Register</button>
