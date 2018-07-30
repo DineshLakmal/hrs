@@ -67,12 +67,12 @@
                             </li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                     <img src="<?php echo e(Auth::user()->getFirstMediaUrl('avatars', 'thumb')); ?>">
+                                     <img src="<?php echo e(asset('uploads/avatars/'.Auth::user()->avatar)); ?>" style="width:32px; height:32px; position:relative; border-radius:5%">
                                     <?php echo e(Auth::user()->name); ?> <span class="caret"></span>
                                 </a>
 
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                          <a class="dropdown-item" href="<?php echo e(route('logout')); ?>">
+                                          <a class="dropdown-item" href="<?php echo e(url('profile')); ?>">
                                             <?php echo e(__('View Profile')); ?>
 
                                           </a>

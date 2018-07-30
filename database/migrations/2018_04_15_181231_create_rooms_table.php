@@ -19,6 +19,7 @@ class CreateRoomsTable extends Migration
             $table->integer('room_types_id')->unsigned();
             $table->float('room_price');
             $table->integer('floor');
+
             $table->timestamps();
 
             $table->foreign('room_types_id')->references('id')->on('room_types');

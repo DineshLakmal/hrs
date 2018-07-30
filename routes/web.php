@@ -35,6 +35,10 @@ Route::post('bookings/search_result', 'BookingController@search');
 Route::post('bookings/create_customer', 'BookingController@addCustomer');
 
 
+// profile
+Route::get('profile', 'UserController@profile');
+Route::post('profile', 'UserController@update_avatar');
+
 
 
 //Route::get('rooms', 'BookingController@test')->name('test');
